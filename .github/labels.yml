@@ -1,0 +1,88 @@
+labels:
+  - name: "bug"
+    color: "d73a4a"
+    description: "Something isn't working"
+  
+  - name: "documentation"
+    color: "0075ca"
+    description: "Improvements or additions to documentation"
+  
+  - name: "duplicate"
+    color: "cfd3d7"
+    description: "This issue or pull request already exists"
+  
+  - name: "enhancement"
+    color: "a2eeef"
+    description: "New feature or request"
+  
+  - name: "good first issue"
+    color: "7057ff"
+    description: "Good for newcomers"
+  
+  - name: "help wanted"
+    color: "008672"
+    description: "Extra attention is needed"
+  
+  - name: "invalid"
+    color: "e4e669"
+    description: "Something isn't valid"
+  
+  - name: "question"
+    color: "d876e3"
+    description: "Further information is requested"
+  
+  - name: "wontfix"
+    color: "ffffff"
+    description: "This will not be worked on"
+  
+  - name: "frontend"
+    color: "0366d6"
+    description: "Frontend related changes"
+  
+  - name: "backend"
+    color: "28a745"
+    description: "Backend/PHP related changes"
+  
+  - name: "database"
+    color: "ff6b6b"
+    description: "Database related changes"
+  
+  - name: "ui/ux"
+    color: "ff8c00"
+    description: "User interface and experience changes"
+  
+  - name: "performance"
+    color: "00d4aa"
+    description: "Performance improvements"
+  
+  - name: "security"
+    color: "ff0000"
+    description: "Security related changes"
+  
+  - name: "testing"
+    color: "6f42c1"
+    description: "Testing related changes"
+  
+  - name: "deployment"
+    color: "1abc9c"
+    description: "Deployment and infrastructure"
+  
+  - name: "needs-triage"
+    color: "fef2c0"
+    description: "Issue needs to be reviewed and categorized"
+  
+  - name: "in-progress"
+    color: "1d76db"
+    description: "Work in progress"
+  
+  - name: "blocked"
+    color: "ff6b6b"
+    description: "Blocked by other issues or dependencies"
+  
+  - name: "ready-for-review"
+    color: "28a745"
+    description: "Ready for code review"
+  
+  - name: "hotfix"
+    color: "ff0000"
+    description: "Critical fix that needs immediate attention"
