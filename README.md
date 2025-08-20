@@ -44,7 +44,7 @@ B&B/
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/thedragon689/bb-elegante.git
    cd B&B
    ```
 
@@ -130,8 +130,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support
 
 For support and questions:
-- Email: [your-email@example.com]
-- Website: [your-website.com]
+- Email: webdevl73@gmail.com
+- Repository: https://github.com/thedragon689/bb-elegante.git
 
 ## 🙏 Acknowledgments
 

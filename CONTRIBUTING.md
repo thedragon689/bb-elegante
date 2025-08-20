@@ -128,7 +128,8 @@ For feature requests:
 
 - Check existing issues and discussions
 - Ask questions in GitHub Discussions
-- Contact maintainers for urgent issues
+- Contact maintainers for urgent issues: webdevl73@gmail.com
+- Repository: https://github.com/thedragon689/bb-elegante.git
 
 ## 🎯 Contribution Areas
 

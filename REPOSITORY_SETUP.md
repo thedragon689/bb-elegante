@@ -170,3 +170,9 @@ If you need help with:
 **Your B&B Elegante repository is now fully configured and ready for development!** 🚀✨
 
 Visit: https://github.com/thedragon689/bb-elegante
+
+## 📧 Contact Information
+
+- **Email**: webdevl73@gmail.com
+- **Repository**: https://github.com/thedragon689/bb-elegante.git
+- **Clone Command**: `git clone https://github.com/thedragon689/bb-elegante.git`

@@ -46,5 +46,13 @@
     "airbnb-style"
   ],
   "author": "B&B Elegante",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thedragon689/bb-elegante.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thedragon689/bb-elegante/issues"
+  },
+  "homepage": "https://github.com/thedragon689/bb-elegante#readme",
   "license": "MIT"
 } 
