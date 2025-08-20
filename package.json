@@ -1,0 +1,50 @@
+{
+  "name": "bb-elegante-website",
+  "version": "1.0.0",
+  "description": "B&B Elegante - Modern website with booking functionality",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --open=/",
+    "build": "npm run build:css && npm run build:js && npm run build:html",
+    "build:css": "postcss styles.css -o dist/styles.min.css --env production",
+    "build:js": "terser script.js -o dist/script.min.js --compress --mangle",
+    "build:html": "html-minifier index.html -o dist/index.html --collapse-whitespace --remove-comments",
+    "watch": "npm run watch:css & npm run watch:js",
+    "watch:css": "postcss styles.css -o dist/styles.css --watch",
+    "watch:js": "terser script.js -o dist/script.js --watch",
+    "lint": "eslint script.js",
+    "lint:css": "stylelint styles.css",
+    "format": "prettier --write .",
+    "optimize:images": "imagemin images/* --out-dir=dist/images",
+    "serve": "http-server dist -p 8080 -o"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "terser": "^5.24.0",
+    "html-minifier": "^4.0.0",
+    "eslint": "^8.55.0",
+    "stylelint": "^15.11.0",
+    "prettier": "^3.1.0",
+    "imagemin": "^8.0.1",
+    "imagemin-webp": "^8.0.0",
+    "http-server": "^14.1.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "keywords": [
+    "b&b",
+    "hotel",
+    "booking",
+    "responsive",
+    "airbnb-style"
+  ],
+  "author": "B&B Elegante",
+  "license": "MIT"
+} 

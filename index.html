@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B&B Elegante - Il tuo soggiorno perfetto</title>
+    <meta name="description" content="B&B Elegante - Il tuo soggiorno perfetto nel cuore della città. Prenota direttamente o tramite i nostri partner.">
+    <meta name="keywords" content="B&B, hotel, Roma, prenotazione, alloggio, turismo">
+    <meta name="author" content="B&B Elegante">
+    <meta name="robots" content="index, follow">
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ff385c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="B&B Elegante">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="B&B Elegante - Il tuo soggiorno perfetto">
+    <meta property="og:description" content="Scopri il comfort e l'eleganza nel cuore della città">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bnelegante.it">
+    <meta property="og:image" content="images/bnb.webp">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="B&B Elegante - Il tuo soggiorno perfetto">
+    <meta name="twitter:description" content="Scopri il comfort e l'eleganza nel cuore della città">
+    <meta name="twitter:image" content="images/bnb.webp">
+    
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>B&B Elegante</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#galleria" class="nav-link">Galleria</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#dove-siamo" class="nav-link">Dove Siamo</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#servizi" class="nav-link">Servizi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contatti" class="nav-link">Contatti</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="video/agriturismo.mp4" type="video/mp4">
+                Il tuo browser non supporta il tag video.
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1>Benvenuti al B&B Elegante</h1>
+            <p>Scopri il comfort e l'eleganza nel cuore della città</p>
+            <div class="hero-buttons">
+                <a href="#galleria" class="btn btn-primary">Scopri le nostre camere</a>
+                <a href="#contatti" class="btn btn-secondary">Prenota ora</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galleria Section -->
+    <section id="galleria" class="galleria">
+        <div class="container">
+            <h2>Le Nostre Camere</h2>
+            <p>Scopri le nostre eleganti camere e appartamenti</p>
+            
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="camere/camera.webp" alt="Camera Deluxe" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="room-fallback" style="display: none; width: 100%; height: 100%; background: linear-gradient(135deg, #ff385c 0%, #e31b4a 100%); color: white; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; text-align: center;">
+                            Camera Deluxe<br>€120/notte
+                        </div>
+                        <div class="room-price">€120/notte</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Camera Deluxe</h3>
+                        <p>Camera spaziosa con vista panoramica, bagno privato e balcone</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 letto king-size</span>
+                            <span><i class="fas fa-bath"></i> Bagno privato</span>
+                            <span><i class="fas fa-wifi"></i> WiFi gratuito</span>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-room="deluxe">Prenota Ora</button>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="camere/camera1.webp" alt="Suite Romantica" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="room-fallback" style="display: none; width: 100%; height: 100%; background: linear-gradient(135deg, #ff5a5f 0%, #e31b4a 100%); color: white; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; text-align: center;">
+                            Suite Romantica<br>€180/notte
+                        </div>
+                        <div class="room-price">€180/notte</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Suite Romantica</h3>
+                        <p>Suite elegante con jacuzzi, vista città e colazione inclusa</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 letto king-size</span>
+                            <span><i class="fas fa-bath"></i> Jacuzzi</span>
+                            <span><i class="fas fa-coffee"></i> Colazione inclusa</span>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-room="suite">Prenota Ora</button>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <img src="camere/camera2.webp" alt="Appartamento Famiglia" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="room-fallback" style="display: none; width: 100%; height: 100%; background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%); color: white; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; text-align: center;">
+                            Appartamento Famiglia<br>€220/notte
+                        </div>
+                        <div class="room-price">€220/notte</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Appartamento Famiglia</h3>
+                        <p>Spazioso appartamento con 2 camere, cucina e soggiorno</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 2 camere da letto</span>
+                            <span><i class="fas fa-utensils"></i> Cucina attrezzata</span>
+                            <span><i class="fas fa-couch"></i> Soggiorno</span>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-room="appartamento">Prenota Ora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dove Siamo Section -->
+    <section id="dove-siamo" class="dove-siamo">
+        <div class="container">
+            <h2>Dove Siamo</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>B&B Elegante</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Via Roma 123, 00100 Roma</p>
+                    <p><i class="fas fa-phone"></i> +39 06 1234 5678</p>
+                    <p><i class="fas fa-envelope"></i> info@bnelegante.it</p>
+                    
+                    <div class="transport-info">
+                        <h4>Come raggiungerci:</h4>
+                        <ul>
+                            <li><i class="fas fa-train"></i> Stazione Termini: 10 min a piedi</li>
+                            <li><i class="fas fa-subway"></i> Metro A - Repubblica: 5 min a piedi</li>
+                            <li><i class="fas fa-bus"></i> Autobus 64, 70, 170</li>
+                            <li><i class="fas fa-plane"></i> Aeroporto Fiumicino: 30 min</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1234567890123!2d12.4964!3d41.9028!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDU0JzEwLjEiTiAxMsKwMjknNDcuMCJF!5e0!3m2!1sit!2sit!4v1234567890123" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi Section -->
+    <section id="servizi" class="servizi">
+        <div class="container">
+            <h2>Servizi nei Dintorni</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Ristoranti</h3>
+                    <p>I migliori ristoranti tradizionali e moderni a pochi passi</p>
+                    <ul>
+                        <li>Trattoria Romana - 2 min</li>
+                        <li>Pizzeria Napoletana - 5 min</li>
+                        <li>Ristorante Gourmet - 8 min</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-shopping-bag"></i>
+                    <h3>Shopping</h3>
+                    <p>Centri commerciali e negozi per ogni esigenza</p>
+                    <ul>
+                        <li>Galleria Alberto Sordi - 3 min</li>
+                        <li>Via del Corso - 5 min</li>
+                        <li>Centro Commerciale - 10 min</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Attrazioni</h3>
+                    <p>Monumenti e musei imperdibili nelle vicinanze</p>
+                    <ul>
+                        <li>Fontana di Trevi - 15 min</li>
+                        <li>Colosseo - 20 min</li>
+                        <li>Vaticano - 25 min</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-car"></i>
+                    <h3>Trasporti</h3>
+                    <p>Facile accesso a tutti i mezzi di trasporto</p>
+                    <ul>
+                        <li>Stazione Termini - 10 min</li>
+                        <li>Metro A e B - 5 min</li>
+                        <li>Autobus urbani - 2 min</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="contatti">
+        <div class="container">
+            <h2>Contattaci</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informazioni di Contatto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Indirizzo</h4>
+                            <p>Via Roma 123, 00100 Roma, Italia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefono</h4>
+                            <p>+39 06 1234 5678</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@bnelegante.it</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Orari Check-in</h4>
+                            <p>14:00 - 22:00</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Seguici sui Social</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Invia un Messaggio</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nome e Cognome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Il tuo messaggio" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Prenota la tua Camera</h2>
+            <div class="booking-options">
+                <div class="booking-option">
+                    <h3>Prenotazione Diretta</h3>
+                    <p>Prenota direttamente con noi per i migliori prezzi</p>
+                    <form id="directBookingForm">
+                        <div class="form-group">
+                            <label for="checkIn">Check-in:</label>
+                            <input type="date" id="checkIn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkOut">Check-out:</label>
+                            <input type="date" id="checkOut" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Ospiti:</label>
+                            <select id="guests" required>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 persone</option>
+                                <option value="3">3 persone</option>
+                                <option value="4">4 persone</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Prenota Direttamente</button>
+                    </form>
+                </div>
+
+                <div class="booking-option">
+                    <h3>Prenota tramite Partner</h3>
+                    <p>Prenota tramite i nostri partner ufficiali</p>
+                    <div class="partner-buttons">
+                        <a href="#" class="btn btn-booking">
+                            <i class="fab fa-booking"></i>
+                            Booking.com
+                        </a>
+                        <a href="#" class="btn btn-airbnb">
+                            <i class="fab fa-airbnb"></i>
+                            Airbnb
+                        </a>
+                        <a href="#" class="btn btn-tripadvisor">
+                            <i class="fab fa-tripadvisor"></i>
+                            TripAdvisor
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>B&B Elegante</h3>
+                    <p>Il tuo soggiorno perfetto nel cuore di Roma</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Utili</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#galleria">Galleria</a></li>
+                        <li><a href="#dove-siamo">Dove Siamo</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <p>Via Roma 123, 00100 Roma</p>
+                    <p>+39 06 1234 5678</p>
+                    <p>info@bnelegante.it</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 B&B Elegante. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('✅ Service Worker registrato con successo:', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('⚠️ Service Worker non registrato (normale in sviluppo):', registrationError);
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

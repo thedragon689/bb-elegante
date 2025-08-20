@@ -1,0 +1,59 @@
+<svg width="400" height="300" viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="suiteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff5f5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#fed7d7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#suiteGradient)"/>
+  
+  <!-- Room walls -->
+  <rect x="50" y="50" width="300" height="200" fill="#ffffff" stroke="#dee2e6" stroke-width="2"/>
+  
+  <!-- Floor -->
+  <rect x="50" y="230" width="300" height="20" fill="#f8f9fa"/>
+  
+  <!-- King size bed -->
+  <rect x="70" y="140" width="140" height="70" fill="#ff385c" rx="8"/>
+  <rect x="75" y="145" width="130" height="60" fill="#e31b4a"/>
+  <rect x="80" y="150" width="120" height="50" fill="#ffffff"/>
+  
+  <!-- Jacuzzi -->
+  <ellipse cx="280" cy="180" rx="40" ry="25" fill="#17a2b8"/>
+  <ellipse cx="280" cy="180" rx="35" ry="20" fill="#138496"/>
+  <ellipse cx="280" cy="180" rx="30" ry="15" fill="#ffffff"/>
+  
+  <!-- Bubbles -->
+  <circle cx="270" cy="170" r="3" fill="rgba(255,255,255,0.8)"/>
+  <circle cx="285" cy="165" r="2" fill="rgba(255,255,255,0.6)"/>
+  <circle cx="295" cy="175" r="2" fill="rgba(255,255,255,0.7)"/>
+  
+  <!-- Bedside table -->
+  <rect x="230" y="150" width="30" height="30" fill="#6c757d"/>
+  <rect x="235" y="155" width="20" height="20" fill="#495057"/>
+  
+  <!-- Lamp -->
+  <circle cx="245" cy="130" r="12" fill="#ffc107"/>
+  <rect x="240" y="130" width="10" height="15" fill="#6c757d"/>
+  
+  <!-- Window with view -->
+  <rect x="320" y="80" width="20" height="60" fill="#87ceeb"/>
+  <rect x="322" y="82" width="16" height="56" fill="#ffffff"/>
+  
+  <!-- Romantic candles -->
+  <rect x="100" y="120" width="4" height="15" fill="#6c757d"/>
+  <circle cx="102" cy="120" r="3" fill="#ffc107"/>
+  
+  <rect x="120" y="125" width="4" height="15" fill="#6c757d"/>
+  <circle cx="122" cy="125" r="3" fill="#ffc107"/>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="100" r="6" fill="#ff385c"/>
+  <circle cx="170" cy="100" r="6" fill="#ff385c"/>
+  <circle cx="190" cy="100" r="6" fill="#ff385c"/>
+  
+  <!-- Text -->
+  <text x="200" y="280" text-anchor="middle" fill="#495057" font-family="Arial, sans-serif" font-size="14" font-weight="bold">Suite Romantica</text>
+</svg> 
