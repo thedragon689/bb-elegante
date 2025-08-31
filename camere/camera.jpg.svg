@@ -1,0 +1,27 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Room representation -->
+  <rect x="50" y="50" width="300" height="200" rx="20" fill="#ff385c" stroke="#e31b4a" stroke-width="3"/>
+  
+  <!-- Bed -->
+  <rect x="80" y="120" width="120" height="80" rx="10" fill="white"/>
+  <rect x="90" y="130" width="100" height="60" rx="5" fill="#e31b4a"/>
+  
+  <!-- Window -->
+  <rect x="250" y="80" width="60" height="60" rx="5" fill="#87ceeb"/>
+  <rect x="255" y="85" width="50" height="50" fill="white"/>
+  
+  <!-- Door -->
+  <rect x="180" y="150" width="40" height="80" rx="5" fill="#8b4513"/>
+  <circle cx="210" cy="190" r="3" fill="#ffd700"/>
+  
+  <!-- Text -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    Camera Deluxe
+  </text>
+  <text x="200" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    €120/notte
+  </text>
+</svg>

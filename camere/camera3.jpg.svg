@@ -1,0 +1,32 @@
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="300" fill="#f8f9fa"/>
+  
+  <!-- Room representation -->
+  <rect x="50" y="50" width="300" height="200" rx="20" fill="#ff9800" stroke="#f57c00" stroke-width="3"/>
+  
+  <!-- Queen bed -->
+  <rect x="80" y="120" width="110" height="80" rx="10" fill="white"/>
+  <rect x="90" y="130" width="90" height="60" rx="5" fill="#f57c00"/>
+  
+  <!-- Garden view window -->
+  <rect x="250" y="80" width="70" height="70" rx="5" fill="#87ceeb"/>
+  <rect x="255" y="85" width="60" height="60" fill="white"/>
+  
+  <!-- Garden representation -->
+  <circle cx="320" cy="100" r="15" fill="#4caf50"/>
+  <circle cx="300" cy="110" r="12" fill="#8bc34a"/>
+  <circle cx="340" cy="110" r="10" fill="#4caf50"/>
+  
+  <!-- Tree -->
+  <rect x="315" y="130" width="10" height="20" fill="#8b4513"/>
+  <circle cx="320" cy="125" r="12" fill="#4caf50"/>
+  
+  <!-- Text -->
+  <text x="200" y="280" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="#333">
+    Camera Extra
+  </text>
+  <text x="200" y="295" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#666">
+    €150/notte
+  </text>
+</svg>

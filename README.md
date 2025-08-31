@@ -119,6 +119,14 @@ Images are optimized using:
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+## 🌟 Open Source
+
+This is a public repository! Feel free to:
+- ⭐ Star the repository if you find it useful
+- 🍴 Fork and customize for your own projects
+- 🐛 Report bugs or suggest improvements
+- 💡 Contribute with pull requests
+
 ## 👥 Contributing
 
 1. Fork the repository

@@ -103,6 +103,7 @@ temp/
 .Trashes
 ehthumbs.db
 Thumbs.db
+*.DS_Store
 
 # PHP specific
 *.php~

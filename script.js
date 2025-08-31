@@ -62,6 +62,27 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
+// FAQ Functionality
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    const answer = item.querySelector('.faq-answer');
+    
+    question.addEventListener('click', () => {
+        const isActive = item.classList.contains('active');
+        
+        // Close all other FAQ items
+        faqItems.forEach(otherItem => {
+            otherItem.classList.remove('active');
+        });
+        
+        // Toggle current item
+        if (!isActive) {
+            item.classList.add('active');
+        }
+    });
+});
+
 // Direct Booking Form
 const directBookingForm = document.getElementById('directBookingForm');
 directBookingForm.addEventListener('submit', (e) => {
@@ -87,6 +108,9 @@ directBookingForm.addEventListener('submit', (e) => {
     submitBtn.textContent = 'Prenotazione in corso...';
     submitBtn.disabled = true;
     
+    // Add loading class for visual feedback
+    submitBtn.classList.add('loading');
+    
     // Send to PHP backend
     fetch('api/booking.php', {
         method: 'POST',
@@ -102,20 +126,60 @@ directBookingForm.addEventListener('submit', (e) => {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            showBookingConfirmation('Prenotazione diretta', checkIn, checkOut, guests, data.details);
+            showNotification('Prenotazione inviata con successo! Ti contatteremo presto per confermare.', 'success');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
         } else {
-            alert('Errore: ' + data.message);
+            showNotification('Errore: ' + data.message, 'error');
         }
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Errore di connessione. Riprova più tardi.');
+        showNotification('Errore durante l\'invio della prenotazione. Riprova più tardi.', 'error');
     })
     .finally(() => {
         submitBtn.textContent = originalText;
         submitBtn.disabled = false;
+        submitBtn.classList.remove('loading');
     });
 });
+
+// Notification System
+function showNotification(message, type = 'info') {
+    // Remove existing notifications
+    const existingNotifications = document.querySelectorAll('.notification');
+    existingNotifications.forEach(notification => notification.remove());
+    
+    // Create notification element
+    const notification = document.createElement('div');
+    notification.className = `notification notification-${type}`;
+    notification.innerHTML = `
+        <div class="notification-content">
+            <i class="fas fa-${type === 'success' ? 'check-circle' : type === 'error' ? 'exclamation-circle' : 'info-circle'}"></i>
+            <span>${message}</span>
+        </div>
+        <button class="notification-close">&times;</button>
+    `;
+    
+    // Add to page
+    document.body.appendChild(notification);
+    
+    // Show notification
+    setTimeout(() => notification.classList.add('show'), 100);
+    
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => notification.remove(), 300);
+    }, 5000);
+    
+    // Close button functionality
+    const closeBtn = notification.querySelector('.notification-close');
+    closeBtn.addEventListener('click', () => {
+        notification.classList.remove('show');
+        setTimeout(() => notification.remove(), 300);
+    });
+}
 
 // Contact Form
 const contactForm = document.getElementById('contactForm');
@@ -137,6 +201,7 @@ contactForm.addEventListener('submit', (e) => {
     const originalText = submitBtn.textContent;
     submitBtn.textContent = 'Invio in corso...';
     submitBtn.disabled = true;
+    submitBtn.classList.add('loading');
     
     // Send to PHP backend
     fetch('api/contact.php', {
@@ -154,15 +219,16 @@ contactForm.addEventListener('submit', (e) => {
     .then(response => response.json())
     .then(data => {
         if (data.success) {
-            showMessageConfirmation(name, email);
+            showNotification('Messaggio inviato con successo! Ti risponderemo presto.', 'success');
             contactForm.reset();
         } else {
-            alert('Errore: ' + data.message);
+            showNotification('Errore: ' + data.message, 'error');
         }
     })
     .catch(error => {
         console.error('Error:', error);
-        alert('Errore di connessione. Riprova più tardi.');
+        showNotification('Errore durante l\'invio del messaggio. Riprova più tardi.', 'error');
+        submitBtn.classList.remove('loading');
     })
     .finally(() => {
         submitBtn.textContent = originalText;

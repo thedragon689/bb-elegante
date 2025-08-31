@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B&B Elegante - Il tuo soggiorno perfetto</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <meta name="description" content="B&B Elegante - Il tuo soggiorno perfetto nel cuore della città. Prenota direttamente o tramite i nostri partner.">
     <meta name="keywords" content="B&B, hotel, Roma, prenotazione, alloggio, turismo">
     <meta name="author" content="B&B Elegante">
@@ -34,6 +39,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Breadcrumbs -->
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <div class="container">
+            <ol class="breadcrumb-list">
+                <li class="breadcrumb-item">
+                    <a href="#home" aria-current="page">Home</a>
+                </li>
+            </ol>
+        </div>
+    </nav>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
@@ -52,6 +68,12 @@
                 </li>
                 <li class="nav-item">
                     <a href="#servizi" class="nav-link">Servizi</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonianze" class="nav-link">Testimonianze</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#faq" class="nav-link">FAQ</a>
                 </li>
                 <li class="nav-item">
                     <a href="#contatti" class="nav-link">Contatti</a>
@@ -93,10 +115,11 @@
             <div class="rooms-grid">
                 <div class="room-card">
                     <div class="room-image">
-                        <img src="camere/camera.webp" alt="Camera Deluxe" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="room-fallback" style="display: none; width: 100%; height: 100%; background: linear-gradient(135deg, #ff385c 0%, #e31b4a 100%); color: white; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; text-align: center;">
-                            Camera Deluxe<br>€120/notte
-                        </div>
+                        <picture>
+                            <source srcset="camere/camera.webp" type="image/webp">
+                            <source srcset="camere/camera.jpg" type="image/jpeg">
+                            <img src="camere/camera.jpg.svg" alt="Camera Deluxe" loading="lazy" onerror="this.src='camere/camera.jpg.svg'">
+                        </picture>
                         <div class="room-price">€120/notte</div>
                     </div>
                     <div class="room-info">
@@ -113,10 +136,11 @@
 
                 <div class="room-card">
                     <div class="room-image">
-                        <img src="camere/camera1.webp" alt="Suite Romantica" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="room-fallback" style="display: none; width: 100%; height: 100%; background: linear-gradient(135deg, #ff5a5f 0%, #e31b4a 100%); color: white; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; text-align: center;">
-                            Suite Romantica<br>€180/notte
-                        </div>
+                        <picture>
+                            <source srcset="camere/camera1.webp" type="image/webp">
+                            <source srcset="camere/camera1.jpg" type="image/jpeg">
+                            <img src="camere/camera1.jpg.svg" alt="Suite Romantica" loading="lazy" onerror="this.src='camere/camera1.jpg.svg'">
+                        </picture>
                         <div class="room-price">€180/notte</div>
                     </div>
                     <div class="room-info">
@@ -133,10 +157,11 @@
 
                 <div class="room-card">
                     <div class="room-image">
-                        <img src="camere/camera2.webp" alt="Appartamento Famiglia" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                        <div class="room-fallback" style="display: none; width: 100%; height: 100%; background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%); color: white; align-items: center; justify-content: center; font-size: 1.2rem; font-weight: bold; text-align: center;">
-                            Appartamento Famiglia<br>€220/notte
-                        </div>
+                        <picture>
+                            <source srcset="camere/camera2.webp" type="image/webp">
+                            <source srcset="camere/camera2.jpg" type="image/jpeg">
+                            <img src="camere/camera2.jpg.svg" alt="Appartamento Famiglia" loading="lazy" onerror="this.src='camere/camera2.jpg.svg'">
+                        </picture>
                         <div class="room-price">€220/notte</div>
                     </div>
                     <div class="room-info">
@@ -148,6 +173,27 @@
                             <span><i class="fas fa-couch"></i> Soggiorno</span>
                         </div>
                         <button class="btn btn-primary book-btn" data-room="appartamento">Prenota Ora</button>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <picture>
+                            <source srcset="camere/camera3.webp" type="image/webp">
+                            <source srcset="camere/camera3.jpg" type="image/jpeg">
+                            <img src="camere/camera3.jpg.svg" alt="Camera Extra" loading="lazy" onerror="this.src='camere/camera3.jpg.svg'">
+                        </picture>
+                        <div class="room-price">€150/notte</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Camera Extra</h3>
+                        <p>Camera confortevole con vista giardino e tutti i comfort moderni</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 letto queen-size</span>
+                            <span><i class="fas fa-bath"></i> Bagno privato</span>
+                            <span><i class="fas fa-tree"></i> Vista giardino</span>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-room="extra">Prenota Ora</button>
                     </div>
                 </div>
             </div>
@@ -229,6 +275,61 @@
                         <li>Metro A e B - 5 min</li>
                         <li>Autobus urbani - 2 min</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonianze Section -->
+    <section id="testimonianze" class="testimonianze">
+        <div class="container">
+            <h2>Le Esperienze dei Nostri Ospiti</h2>
+            <p>Scopri cosa dicono di noi i viaggiatori di tutto il mondo</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Soggiorno perfetto! Camera pulita, personale gentilissimo e posizione centrale. Tornerò sicuramente!"</p>
+                    <div class="testimonial-author">
+                        <strong>Maria Rossi</strong>
+                        <span>Milano, Italia</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Esperienza fantastica! Il B&B è elegante e confortevole, perfetto per una vacanza romantica a Roma."</p>
+                    <div class="testimonial-author">
+                        <strong>Jean Dupont</strong>
+                        <span>Parigi, Francia</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Servizio impeccabile e colazione deliziosa. Posizione strategica per visitare tutti i monumenti di Roma."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah Johnson</strong>
+                        <span>Londra, UK</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -356,6 +457,56 @@
         </div>
     </div>
 
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Domande Frequenti</h2>
+            <p>Tutto quello che devi sapere sul tuo soggiorno</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quali sono gli orari di check-in e check-out?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Il check-in è disponibile dalle 14:00 alle 22:00, mentre il check-out è entro le 11:00 del mattino.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>È possibile prenotare per più di 4 persone?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, contattaci direttamente per prenotazioni di gruppo o famiglie numerose. Offriamo soluzioni personalizzate.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>La colazione è inclusa nel prezzo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Assolutamente sì! La nostra colazione continentale è inclusa nel prezzo e servita ogni mattina dalle 7:30 alle 10:00.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Accettate animali domestici?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, accettiamo animali domestici di piccola taglia su richiesta. È richiesto un supplemento di €15 per notte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -370,6 +521,8 @@
                         <li><a href="#home">Home</a></li>
                         <li><a href="#galleria">Galleria</a></li>
                         <li><a href="#dove-siamo">Dove Siamo</a></li>
+                        <li><a href="#testimonianze">Testimonianze</a></li>
+                        <li><a href="#faq">FAQ</a></li>
                         <li><a href="#contatti">Contatti</a></li>
                     </ul>
                 </div>
@@ -395,7 +548,50 @@
         </div>
     </footer>
 
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "B&B Elegante",
+      "description": "Il tuo soggiorno perfetto nel cuore di Roma",
+      "url": "https://bnelegante.it",
+      "telephone": "+39 06 1234 5678",
+      "email": "info@bnelegante.it",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Roma 123",
+        "addressLocality": "Roma",
+        "postalCode": "00100",
+        "addressCountry": "IT"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "41.9028",
+        "longitude": "12.4964"
+      },
+      "openingHours": "Mo-Su 14:00-22:00",
+      "priceRange": "€€",
+      "image": "https://bnelegante.it/images/bnb.webp",
+      "sameAs": [
+        "https://www.facebook.com/bnelegante",
+        "https://www.instagram.com/bnelegante",
+        "https://www.tripadvisor.com/bnelegante"
+      ]
+    }
+    </script>
+
     <script src="script.js"></script>
+    
+    <!-- Analytics -->
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
     
     <!-- Service Worker Registration -->
     <script>

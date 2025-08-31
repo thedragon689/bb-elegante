@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Immagini Camere - B&B Elegante</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .test-image { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        .test-image img { max-width: 100%; height: auto; }
+        .status { padding: 10px; margin: 10px 0; border-radius: 5px; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+    </style>
+</head>
+<body>
+    <h1>Test Immagini Camere B&B Elegante</h1>
+    
+    <div class="test-image">
+        <h3>Camera Deluxe (WebP)</h3>
+        <img src="camere/camera.webp" alt="Camera Deluxe WebP" onload="this.parentNode.querySelector('.status').innerHTML='✅ Caricata con successo'" onerror="this.parentNode.querySelector('.status').innerHTML='❌ Errore nel caricamento'">
+        <div class="status">Caricamento in corso...</div>
+    </div>
+    
+    <div class="test-image">
+        <h3>Camera Deluxe (SVG Fallback)</h3>
+        <img src="camere/camera.jpg.svg" alt="Camera Deluxe SVG" onload="this.parentNode.querySelector('.status').innerHTML='✅ Caricata con successo'" onerror="this.parentNode.querySelector('.status').innerHTML='❌ Errore nel caricamento'">
+        <div class="status">Caricamento in corso...</div>
+    </div>
+    
+    <div class="test-image">
+        <h3>Suite Romantica (WebP)</h3>
+        <img src="camere/camera1.webp" alt="Suite Romantica WebP" onload="this.parentNode.querySelector('.status').innerHTML='✅ Caricata con successo'" onerror="this.parentNode.querySelector('.status').innerHTML='❌ Errore nel caricamento'">
+        <div class="status">Caricamento in corso...</div>
+    </div>
+    
+    <div class="test-image">
+        <h3>Suite Romantica (SVG Fallback)</h3>
+        <img src="camere/camera1.jpg.svg" alt="Suite Romantica SVG" onload="this.parentNode.querySelector('.status').innerHTML='✅ Caricata con successo'" onerror="this.parentNode.querySelector('.status').innerHTML='❌ Errore nel caricamento'">
+        <div class="status">Caricamento in corso...</div>
+    </div>
+    
+    <div class="test-image">
+        <h3>Appartamento Famiglia (WebP)</h3>
+        <img src="camere/camera2.webp" alt="Appartamento Famiglia WebP" onload="this.parentNode.querySelector('.status').innerHTML='✅ Caricata con successo'" onerror="this.parentNode.querySelector('.status').innerHTML='❌ Errore nel caricamento'">
+        <div class="status">Caricamento in corso...</div>
+    </div>
+    
+    <div class="test-image">
+        <h3>Appartamento Famiglia (SVG Fallback)</h3>
+        <img src="camere/camera2.jpg.svg" alt="Appartamento Famiglia SVG" onload="this.parentNode.querySelector('.status').innerHTML='✅ Caricata con successo'" onerror="this.parentNode.querySelector('.status').innerHTML='❌ Errore nel caricamento'">
+        <div class="status">Caricamento in corso...</div>
+    </div>
+    
+    <div class="test-image">
+        <h3>Camera Extra (WebP)</h3>
+        <img src="camere/camera3.webp" alt="Camera Extra WebP" onload="this.parentNode.querySelector('.status').innerHTML='✅ Caricata con successo'" onerror="this.parentNode.querySelector('.status').innerHTML='❌ Errore nel caricamento'">
+        <div class="status">Caricamento in corso...</div>
+    </div>
+    
+    <div class="test-image">
+        <h3>Camera Extra (SVG Fallback)</h3>
+        <img src="camere/camera2.jpg.svg" alt="Camera Extra SVG" onload="this.parentNode.querySelector('.status').innerHTML='✅ Caricata con successo'" onerror="this.parentNode.querySelector('.status').innerHTML='❌ Errore nel caricamento'">
+        <div class="status">Caricamento in corso...</div>
+    </div>
+    
+    <script>
+        // Test automatico dopo 3 secondi
+        setTimeout(() => {
+            const images = document.querySelectorAll('img');
+            let loaded = 0;
+            let errors = 0;
+            
+            images.forEach(img => {
+                if (img.complete && img.naturalHeight !== 0) {
+                    loaded++;
+                } else {
+                    errors++;
+                }
+            });
+            
+            console.log(`Test completato: ${loaded} immagini caricate, ${errors} errori`);
+        }, 3000);
+    </script>
+</body>
+</html>

@@ -8,7 +8,7 @@ Your B&B Elegante project has been successfully set up as a **private GitHub rep
 
 - **Name**: `bb-elegante`
 - **URL**: https://github.com/thedragon689/bb-elegante
-- **Visibility**: Private
+- **Visibility**: Public
 - **License**: MIT
 - **Description**: B&B Elegante - Modern website with booking functionality
 
@@ -21,7 +21,7 @@ Your B&B Elegante project has been successfully set up as a **private GitHub rep
 - ✅ `.gitignore` - Excludes unnecessary files
 
 ### 2. **GitHub Repository Features**
-- ✅ **Private Repository** - Only you and collaborators can see
+- ✅ **Public Repository** - Open source and visible to everyone
 - ✅ **Issue Templates** - Bug reports and feature requests
 - ✅ **Discussion Templates** - Community discussions
 - ✅ **Custom Labels** - Organized issue categorization
@@ -117,9 +117,9 @@ git push origin main
 - Build verification
 - Preview deployments
 
-## 🛡️ Security Features
+## 🌐 Public Repository Features
 
-- **Private Repository** - Code is not publicly visible
+- **Public Repository** - Code is open source and visible to everyone
 - **Dependency Scanning** - Automated security audits
 - **Branch Protection** - Prevents direct pushes to main
 - **Code Review** - Required for all changes
