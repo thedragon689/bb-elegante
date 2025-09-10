@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fattoria Pagnana - Agriturismo nel Chianti</title>
+    <title>Villa Toscana - Agriturismo di Lusso nel Chianti</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <meta name="description" content="Fattoria Pagnana - Agriturismo nel Chianti. Appartamenti e camere per vacanze, Winery e location per Matrimoni.">
-    <meta name="keywords" content="agriturismo, Chianti, Toscana, vacanze, matrimoni, winery, fattoria">
-    <meta name="author" content="Fattoria Pagnana">
+    <meta name="description" content="Villa Toscana - Agriturismo di Lusso nel Chianti. Appartamenti e camere per vacanze, Winery e location per Matrimoni.">
+    <meta name="keywords" content="agriturismo, Chianti, Toscana, vacanze, matrimoni, winery, villa, lusso">
+    <meta name="author" content="Villa Toscana">
     <meta name="robots" content="index, follow">
     
     <!-- PWA Support -->
@@ -51,7 +51,7 @@
                         <circle cx="20" cy="20" r="4" fill="white"/>
                     </svg>
                 </div>
-                <h1 class="logo-text">FATTORIA PAGNANA</h1>
+                <h1 class="logo-text">VILLA TOSCANA</h1>
             </div>
             
             <!-- Language and Social -->
@@ -71,19 +71,49 @@
                 </button>
             </div>
         </div>
+        
+        <!-- Mobile Menu -->
+        <nav class="mobile-menu">
+            <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#galleria" class="mobile-nav-link">Galleria</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#dove-siamo" class="mobile-nav-link">Dove Siamo</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#servizi" class="mobile-nav-link">Servizi</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#testimonianze" class="mobile-nav-link">Testimonianze</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#faq" class="mobile-nav-link">FAQ</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#contatti" class="mobile-nav-link">Contatti</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-background">
-            <img src="images/bnb.webp" alt="Fattoria Pagnana" class="hero-image">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="video/agriturismo.mp4" type="video/mp4">
+                Il tuo browser non supporta il tag video.
+            </video>
             <div class="hero-overlay"></div>
         </div>
         
         <div class="hero-content">
             <div class="hero-text">
                 <h2 class="hero-subtitle">Benvenuto a</h2>
-                <h1 class="hero-title">Fattoria Pagnana</h1>
+                <h1 class="hero-title">Villa Toscana</h1>
                 <p class="hero-description">Appartamenti e camere per vacanze</p>
                 <p class="hero-description">Winery e location per Matrimoni</p>
             </div>
@@ -116,7 +146,447 @@
         </div>
     </section>
 
+    <!-- Galleria Section -->
+    <section id="galleria" class="galleria">
+        <div class="container">
+            <h2>Le Nostre Camere</h2>
+            <p>Scopri le nostre eleganti camere e appartamenti</p>
+            
+            <div class="rooms-grid">
+                <div class="room-card">
+                    <div class="room-image">
+                        <picture>
+                            <source srcset="camere/camera.webp" type="image/webp">
+                            <source srcset="camere/camera.jpg" type="image/jpeg">
+                            <img src="camere/camera.jpg.svg" alt="Camera Deluxe" loading="lazy" onerror="this.src='camere/camera.jpg.svg'">
+                        </picture>
+                        <div class="room-price">€120/notte</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Camera Deluxe</h3>
+                        <p>Camera spaziosa con vista panoramica, bagno privato e balcone</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 letto king-size</span>
+                            <span><i class="fas fa-bath"></i> Bagno privato</span>
+                            <span><i class="fas fa-wifi"></i> WiFi gratuito</span>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-room="deluxe">Prenota Ora</button>
+                    </div>
+                </div>
 
+                <div class="room-card">
+                    <div class="room-image">
+                        <picture>
+                            <source srcset="camere/camera1.webp" type="image/webp">
+                            <source srcset="camere/camera1.jpg" type="image/jpeg">
+                            <img src="camere/camera1.jpg.svg" alt="Suite Romantica" loading="lazy" onerror="this.src='camere/camera1.jpg.svg'">
+                        </picture>
+                        <div class="room-price">€180/notte</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Suite Romantica</h3>
+                        <p>Suite elegante con jacuzzi, vista città e colazione inclusa</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 letto king-size</span>
+                            <span><i class="fas fa-bath"></i> Jacuzzi</span>
+                            <span><i class="fas fa-coffee"></i> Colazione inclusa</span>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-room="suite">Prenota Ora</button>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <picture>
+                            <source srcset="camere/camera2.webp" type="image/webp">
+                            <source srcset="camere/camera2.jpg" type="image/jpeg">
+                            <img src="camere/camera2.jpg.svg" alt="Appartamento Famiglia" loading="lazy" onerror="this.src='camere/camera2.jpg.svg'">
+                        </picture>
+                        <div class="room-price">€220/notte</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Appartamento Famiglia</h3>
+                        <p>Spazioso appartamento con 2 camere, cucina e soggiorno</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 2 camere da letto</span>
+                            <span><i class="fas fa-utensils"></i> Cucina attrezzata</span>
+                            <span><i class="fas fa-couch"></i> Soggiorno</span>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-room="appartamento">Prenota Ora</button>
+                    </div>
+                </div>
+
+                <div class="room-card">
+                    <div class="room-image">
+                        <picture>
+                            <source srcset="camere/camera3.webp" type="image/webp">
+                            <source srcset="camere/camera3.jpg" type="image/jpeg">
+                            <img src="camere/camera3.jpg.svg" alt="Camera Extra" loading="lazy" onerror="this.src='camere/camera3.jpg.svg'">
+                        </picture>
+                        <div class="room-price">€150/notte</div>
+                    </div>
+                    <div class="room-info">
+                        <h3>Camera Extra</h3>
+                        <p>Camera confortevole con vista giardino e tutti i comfort moderni</p>
+                        <div class="room-features">
+                            <span><i class="fas fa-bed"></i> 1 letto queen-size</span>
+                            <span><i class="fas fa-bath"></i> Bagno privato</span>
+                            <span><i class="fas fa-tree"></i> Vista giardino</span>
+                        </div>
+                        <button class="btn btn-primary book-btn" data-room="extra">Prenota Ora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dove Siamo Section -->
+    <section id="dove-siamo" class="dove-siamo">
+        <div class="container">
+            <h2>Dove Siamo</h2>
+            <div class="location-content">
+                <div class="location-info">
+                    <h3>Villa Toscana</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Via del Chianti 123, 53013 Gaiole in Chianti (SI)</p>
+                    <p><i class="fas fa-phone"></i> +39 0577 123 456</p>
+                    <p><i class="fas fa-envelope"></i> info@villatoscana.it</p>
+                    
+                    <div class="transport-info">
+                        <h4>Come raggiungerci:</h4>
+                        <ul>
+                            <li><i class="fas fa-car"></i> Da Firenze: 45 min in auto</li>
+                            <li><i class="fas fa-car"></i> Da Siena: 30 min in auto</li>
+                            <li><i class="fas fa-plane"></i> Aeroporto Firenze: 1 ora</li>
+                            <li><i class="fas fa-train"></i> Stazione Siena: 40 min</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2970.1234567890123!2d11.4334!3d43.4698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDPCsDI4JzExLjMiTiAxMcKwMjYnMDAuMiJF!5e0!3m2!1sit!2sit!4v1234567890123" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servizi Section -->
+    <section id="servizi" class="servizi">
+        <div class="container">
+            <h2>Servizi nei Dintorni</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-utensils"></i>
+                    <h3>Ristoranti</h3>
+                    <p>I migliori ristoranti tradizionali toscani a pochi passi</p>
+                    <ul>
+                        <li>Trattoria del Chianti - 2 min</li>
+                        <li>Osteria del Borgo - 5 min</li>
+                        <li>Ristorante Gourmet - 8 min</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-wine-glass"></i>
+                    <h3>Winery</h3>
+                    <p>Visite guidate e degustazioni nei migliori vigneti</p>
+                    <ul>
+                        <li>Cantina Antinori - 10 min</li>
+                        <li>Castello di Brolio - 15 min</li>
+                        <li>Tenuta di Fonterutoli - 20 min</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-landmark"></i>
+                    <h3>Attrazioni</h3>
+                    <p>Monumenti e borghi storici nelle vicinanze</p>
+                    <ul>
+                        <li>Castello di Brolio - 15 min</li>
+                        <li>Siena - 30 min</li>
+                        <li>Firenze - 45 min</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <i class="fas fa-heart"></i>
+                    <h3>Matrimoni</h3>
+                    <p>Location perfetta per il tuo giorno speciale</p>
+                    <ul>
+                        <li>Giardino panoramico</li>
+                        <li>Sala ricevimenti</li>
+                        <li>Servizio catering</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonianze Section -->
+    <section id="testimonianze" class="testimonianze">
+        <div class="container">
+            <h2>Le Esperienze dei Nostri Ospiti</h2>
+            <p>Scopri cosa dicono di noi i viaggiatori di tutto il mondo</p>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Esperienza indimenticabile! La villa è incantevole e la vista sui vigneti è mozzafiato. Torneremo sicuramente!"</p>
+                    <div class="testimonial-author">
+                        <strong>Marco e Giulia</strong>
+                        <span>Milano, Italia</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Perfetto per un matrimonio romantico! Il personale è stato eccezionale e tutto è stato organizzato alla perfezione."</p>
+                    <div class="testimonial-author">
+                        <strong>Sarah e James</strong>
+                        <span>Londra, UK</span>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"La degustazione di vini è stata fantastica! Un'esperienza autentica nel cuore del Chianti."</p>
+                    <div class="testimonial-author">
+                        <strong>Pierre Dubois</strong>
+                        <span>Parigi, Francia</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contatti Section -->
+    <section id="contatti" class="contatti">
+        <div class="container">
+            <h2>Contattaci</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Informazioni di Contatto</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Indirizzo</h4>
+                            <p>Via del Chianti 123, 53013 Gaiole in Chianti (SI), Italia</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Telefono</h4>
+                            <p>+39 0577 123 456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@villatoscana.it</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Orari Check-in</h4>
+                            <p>14:00 - 22:00</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>Seguici sui Social</h4>
+                        <div class="social-icons">
+                            <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-icon"><i class="fab fa-tripadvisor"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Invia un Messaggio</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Nome e Cognome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefono">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Il tuo messaggio" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Prenota la tua Camera</h2>
+            <div class="booking-options">
+                <div class="booking-option">
+                    <h3>Prenotazione Diretta</h3>
+                    <p>Prenota direttamente con noi per i migliori prezzi</p>
+                    <form id="directBookingForm">
+                        <div class="form-group">
+                            <label for="checkIn">Check-in:</label>
+                            <input type="date" id="checkIn" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="checkOut">Check-out:</label>
+                            <input type="date" id="checkOut" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="guests">Ospiti:</label>
+                            <select id="guests" required>
+                                <option value="1">1 persona</option>
+                                <option value="2">2 persone</option>
+                                <option value="3">3 persone</option>
+                                <option value="4">4 persone</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Prenota Direttamente</button>
+                    </form>
+                </div>
+
+                <div class="booking-option">
+                    <h3>Prenota tramite Partner</h3>
+                    <p>Prenota tramite i nostri partner ufficiali</p>
+                    <div class="partner-buttons">
+                        <a href="#" class="btn btn-booking">
+                            <i class="fab fa-booking"></i>
+                            Booking.com
+                        </a>
+                        <a href="#" class="btn btn-airbnb">
+                            <i class="fab fa-airbnb"></i>
+                            Airbnb
+                        </a>
+                        <a href="#" class="btn btn-tripadvisor">
+                            <i class="fab fa-tripadvisor"></i>
+                            TripAdvisor
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2>Domande Frequenti</h2>
+            <p>Tutto quello che devi sapere sul tuo soggiorno</p>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Quali sono gli orari di check-in e check-out?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Il check-in è disponibile dalle 14:00 alle 22:00, mentre il check-out è entro le 11:00 del mattino.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>È possibile prenotare per più di 4 persone?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, contattaci direttamente per prenotazioni di gruppo o famiglie numerose. Offriamo soluzioni personalizzate.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>La colazione è inclusa nel prezzo?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Assolutamente sì! La nostra colazione continentale è inclusa nel prezzo e servita ogni mattina dalle 7:30 alle 10:00.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Accettate animali domestici?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sì, accettiamo animali domestici di piccola taglia su richiesta. È richiesto un supplemento di €15 per notte.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Villa Toscana</h3>
+                    <p>Il tuo soggiorno perfetto nel cuore del Chianti</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Link Utili</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#galleria">Galleria</a></li>
+                        <li><a href="#dove-siamo">Dove Siamo</a></li>
+                        <li><a href="#testimonianze">Testimonianze</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contatti">Contatti</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contatti</h4>
+                    <p>Via del Chianti 123, 53013 Gaiole in Chianti (SI)</p>
+                    <p>+39 0577 123 456</p>
+                    <p>info@villatoscana.it</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Seguici</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tripadvisor"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Villa Toscana. Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Schema.org Structured Data -->
     <script type="application/ld+json">

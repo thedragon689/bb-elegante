@@ -1,10 +1,31 @@
 // Mobile Menu Toggle
 const menuToggle = document.querySelector('.menu-toggle');
+const mobileMenu = document.querySelector('.mobile-menu');
 const header = document.querySelector('.header');
 
 menuToggle.addEventListener('click', () => {
     menuToggle.classList.toggle('active');
-    // Add mobile menu functionality here if needed
+    mobileMenu.classList.toggle('active');
+    document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+});
+
+// Close mobile menu when clicking on links
+const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+mobileNavLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        menuToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+});
+
+// Close mobile menu when clicking outside
+mobileMenu.addEventListener('click', (e) => {
+    if (e.target === mobileMenu) {
+        menuToggle.classList.remove('active');
+        mobileMenu.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    }
 });
 
 // Language Selector
@@ -18,9 +39,84 @@ languageSelectors.forEach(lang => {
 
 // Booking Button
 const bookingBtn = document.querySelector('.booking-btn');
+const bookingModal = document.getElementById('bookingModal');
+const closeModal = document.querySelector('.close');
+
 bookingBtn.addEventListener('click', () => {
-    // Add booking functionality here
-    alert('Funzionalità di prenotazione in arrivo!');
+    bookingModal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+});
+
+closeModal.addEventListener('click', () => {
+    bookingModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+});
+
+// Close modal when clicking outside
+window.addEventListener('click', (e) => {
+    if (e.target === bookingModal) {
+        bookingModal.style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});
+
+// Room booking buttons
+const bookBtns = document.querySelectorAll('.book-btn');
+bookBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        bookingModal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    });
+});
+
+// Direct booking form
+const directBookingForm = document.getElementById('directBookingForm');
+directBookingForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(directBookingForm);
+    const checkIn = formData.get('checkIn');
+    const checkOut = formData.get('checkOut');
+    const guests = formData.get('guests');
+    
+    if (new Date(checkIn) >= new Date(checkOut)) {
+        showNotification('La data di check-out deve essere successiva al check-in', 'error');
+        return;
+    }
+    
+    showNotification('Prenotazione inviata con successo! Ti contatteremo presto.', 'success');
+    directBookingForm.reset();
+    bookingModal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+});
+
+// Contact form
+const contactForm = document.getElementById('contactForm');
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const formData = new FormData(contactForm);
+    const name = formData.get('name');
+    const email = formData.get('email');
+    const message = formData.get('message');
+    
+    showNotification('Messaggio inviato con successo! Ti risponderemo presto.', 'success');
+    contactForm.reset();
+});
+
+// FAQ functionality
+const faqItems = document.querySelectorAll('.faq-item');
+faqItems.forEach(item => {
+    const question = item.querySelector('.faq-question');
+    question.addEventListener('click', () => {
+        // Close other FAQ items
+        faqItems.forEach(otherItem => {
+            if (otherItem !== item) {
+                otherItem.classList.remove('active');
+            }
+        });
+        
+        // Toggle current item
+        item.classList.toggle('active');
+    });
 });
 
 // Scroll Indicator
