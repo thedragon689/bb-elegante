@@ -101,7 +101,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-background">
             <video autoplay muted loop playsinline class="hero-video">
                 <source src="video/agriturismo.mp4" type="video/mp4">
@@ -163,14 +163,14 @@
                         <div class="room-price">€120/notte</div>
                     </div>
                     <div class="room-info">
-                        <h3>Camera Deluxe</h3>
-                        <p>Camera spaziosa con vista panoramica, bagno privato e balcone</p>
+                        <h3 data-translate="room.deluxe">Camera Deluxe</h3>
+                        <p data-translate="room.deluxe.desc">Camera spaziosa con vista panoramica, bagno privato e balcone</p>
                         <div class="room-features">
-                            <span><i class="fas fa-bed"></i> 1 letto king-size</span>
-                            <span><i class="fas fa-bath"></i> Bagno privato</span>
-                            <span><i class="fas fa-wifi"></i> WiFi gratuito</span>
+                            <span><i class="fas fa-bed"></i> 1 <span data-translate="room.features.bed">letto king-size</span></span>
+                            <span><i class="fas fa-bath"></i> <span data-translate="room.features.bath">Bagno privato</span></span>
+                            <span><i class="fas fa-wifi"></i> <span data-translate="room.features.wifi">WiFi gratuito</span></span>
                         </div>
-                        <button class="btn btn-primary book-btn" data-room="deluxe">Prenota Ora</button>
+                        <button class="btn btn-primary book-btn" data-room="deluxe" data-translate="room.book">Prenota Ora</button>
                     </div>
                 </div>
 
@@ -184,14 +184,14 @@
                         <div class="room-price">€180/notte</div>
                     </div>
                     <div class="room-info">
-                        <h3>Suite Romantica</h3>
-                        <p>Suite elegante con jacuzzi, vista città e colazione inclusa</p>
+                        <h3 data-translate="room.suite">Suite Romantica</h3>
+                        <p data-translate="room.suite.desc">Suite elegante con jacuzzi, vista città e colazione inclusa</p>
                         <div class="room-features">
-                            <span><i class="fas fa-bed"></i> 1 letto king-size</span>
-                            <span><i class="fas fa-bath"></i> Jacuzzi</span>
-                            <span><i class="fas fa-coffee"></i> Colazione inclusa</span>
+                            <span><i class="fas fa-bed"></i> 1 <span data-translate="room.features.bed">letto king-size</span></span>
+                            <span><i class="fas fa-bath"></i> <span data-translate="room.features.jacuzzi">Jacuzzi</span></span>
+                            <span><i class="fas fa-coffee"></i> <span data-translate="room.features.breakfast">Colazione inclusa</span></span>
                         </div>
-                        <button class="btn btn-primary book-btn" data-room="suite">Prenota Ora</button>
+                        <button class="btn btn-primary book-btn" data-room="suite" data-translate="room.book">Prenota Ora</button>
                     </div>
                 </div>
 
@@ -205,14 +205,14 @@
                         <div class="room-price">€220/notte</div>
                     </div>
                     <div class="room-info">
-                        <h3>Appartamento Famiglia</h3>
-                        <p>Spazioso appartamento con 2 camere, cucina e soggiorno</p>
+                        <h3 data-translate="room.family">Appartamento Famiglia</h3>
+                        <p data-translate="room.family.desc">Spazioso appartamento con 2 camere, cucina e soggiorno</p>
                         <div class="room-features">
-                            <span><i class="fas fa-bed"></i> 2 camere da letto</span>
-                            <span><i class="fas fa-utensils"></i> Cucina attrezzata</span>
-                            <span><i class="fas fa-couch"></i> Soggiorno</span>
+                            <span><i class="fas fa-bed"></i> 2 <span data-translate="room.features.bed">camere da letto</span></span>
+                            <span><i class="fas fa-utensils"></i> <span data-translate="room.features.kitchen">Cucina attrezzata</span></span>
+                            <span><i class="fas fa-couch"></i> <span data-translate="room.features.living">Soggiorno</span></span>
                         </div>
-                        <button class="btn btn-primary book-btn" data-room="appartamento">Prenota Ora</button>
+                        <button class="btn btn-primary book-btn" data-room="appartamento" data-translate="room.book">Prenota Ora</button>
                     </div>
                 </div>
 
@@ -226,14 +226,14 @@
                         <div class="room-price">€150/notte</div>
                     </div>
                     <div class="room-info">
-                        <h3>Camera Extra</h3>
-                        <p>Camera confortevole con vista giardino e tutti i comfort moderni</p>
+                        <h3 data-translate="room.extra">Camera Extra</h3>
+                        <p data-translate="room.extra.desc">Camera confortevole con vista giardino e tutti i comfort moderni</p>
                         <div class="room-features">
-                            <span><i class="fas fa-bed"></i> 1 letto queen-size</span>
-                            <span><i class="fas fa-bath"></i> Bagno privato</span>
-                            <span><i class="fas fa-tree"></i> Vista giardino</span>
+                            <span><i class="fas fa-bed"></i> 1 <span data-translate="room.features.bed">letto queen-size</span></span>
+                            <span><i class="fas fa-bath"></i> <span data-translate="room.features.bath">Bagno privato</span></span>
+                            <span><i class="fas fa-tree"></i> <span data-translate="room.features.garden">Vista giardino</span></span>
                         </div>
-                        <button class="btn btn-primary book-btn" data-room="extra">Prenota Ora</button>
+                        <button class="btn btn-primary book-btn" data-room="extra" data-translate="room.book">Prenota Ora</button>
                     </div>
                 </div>
             </div>
@@ -558,12 +558,12 @@
                 <div class="footer-section">
                     <h4 data-translate="footer.links">Link Utili</h4>
                     <ul>
-                        <li><a href="#home" data-translate="nav.home">Home</a></li>
-                        <li><a href="#galleria" data-translate="nav.gallery">Galleria</a></li>
-                        <li><a href="#dove-siamo" data-translate="nav.location">Dove Siamo</a></li>
-                        <li><a href="#testimonianze" data-translate="nav.testimonials">Testimonianze</a></li>
-                        <li><a href="#faq" data-translate="nav.faq">FAQ</a></li>
-                        <li><a href="#contatti" data-translate="nav.contact">Contatti</a></li>
+                        <li><a href="#home" class="nav-link" data-translate="nav.home">Home</a></li>
+                        <li><a href="#galleria" class="nav-link" data-translate="nav.gallery">Galleria</a></li>
+                        <li><a href="#dove-siamo" class="nav-link" data-translate="nav.location">Dove Siamo</a></li>
+                        <li><a href="#testimonianze" class="nav-link" data-translate="nav.testimonials">Testimonianze</a></li>
+                        <li><a href="#faq" class="nav-link" data-translate="nav.faq">FAQ</a></li>
+                        <li><a href="#contatti" class="nav-link" data-translate="nav.contact">Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

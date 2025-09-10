@@ -79,11 +79,15 @@ directBookingForm.addEventListener('submit', (e) => {
     const guests = formData.get('guests');
     
     if (new Date(checkIn) >= new Date(checkOut)) {
-        showNotification('La data di check-out deve essere successiva al check-in', 'error');
+        const currentLang = localStorage.getItem('language') || 'it';
+        const errorMsg = currentLang === 'en' ? 'Check-out date must be after check-in date' : 'La data di check-out deve essere successiva al check-in';
+        showNotification(errorMsg, 'error');
         return;
     }
     
-    showNotification('Prenotazione inviata con successo! Ti contatteremo presto.', 'success');
+    const currentLang = localStorage.getItem('language') || 'it';
+    const successMsg = currentLang === 'en' ? 'Booking sent successfully! We will contact you soon.' : 'Prenotazione inviata con successo! Ti contatteremo presto.';
+    showNotification(successMsg, 'success');
     directBookingForm.reset();
     bookingModal.style.display = 'none';
     document.body.style.overflow = 'auto';
@@ -98,7 +102,9 @@ contactForm.addEventListener('submit', (e) => {
     const email = formData.get('email');
     const message = formData.get('message');
     
-    showNotification('Messaggio inviato con successo! Ti risponderemo presto.', 'success');
+    const currentLang = localStorage.getItem('language') || 'it';
+    const successMsg = currentLang === 'en' ? 'Message sent successfully! We will reply soon.' : 'Messaggio inviato con successo! Ti risponderemo presto.';
+    showNotification(successMsg, 'success');
     contactForm.reset();
 });
 
