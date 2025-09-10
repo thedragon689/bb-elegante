@@ -51,14 +51,14 @@
                         <circle cx="20" cy="20" r="4" fill="white"/>
                     </svg>
                 </div>
-                <h1 class="logo-text">VILLA TOSCANA</h1>
+                <h1 class="logo-text" data-translate="logo">VILLA TOSCANA</h1>
             </div>
             
             <!-- Language and Social -->
             <div class="header-right">
                 <div class="language-selector">
-                    <span class="lang active">IT</span>
-                    <span class="lang">EN</span>
+                    <span class="lang active" data-lang="it">IT</span>
+                    <span class="lang" data-lang="en">EN</span>
                 </div>
                 <div class="social-links">
                     <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
@@ -76,25 +76,25 @@
         <nav class="mobile-menu">
             <ul class="mobile-nav-menu">
                 <li class="mobile-nav-item">
-                    <a href="#home" class="mobile-nav-link">Home</a>
+                    <a href="#home" class="mobile-nav-link" data-translate="nav.home">Home</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="#galleria" class="mobile-nav-link">Galleria</a>
+                    <a href="#galleria" class="mobile-nav-link" data-translate="nav.gallery">Galleria</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="#dove-siamo" class="mobile-nav-link">Dove Siamo</a>
+                    <a href="#dove-siamo" class="mobile-nav-link" data-translate="nav.location">Dove Siamo</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="#servizi" class="mobile-nav-link">Servizi</a>
+                    <a href="#servizi" class="mobile-nav-link" data-translate="nav.services">Servizi</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="#testimonianze" class="mobile-nav-link">Testimonianze</a>
+                    <a href="#testimonianze" class="mobile-nav-link" data-translate="nav.testimonials">Testimonianze</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="#faq" class="mobile-nav-link">FAQ</a>
+                    <a href="#faq" class="mobile-nav-link" data-translate="nav.faq">FAQ</a>
                 </li>
                 <li class="mobile-nav-item">
-                    <a href="#contatti" class="mobile-nav-link">Contatti</a>
+                    <a href="#contatti" class="mobile-nav-link" data-translate="nav.contact">Contatti</a>
                 </li>
             </ul>
         </nav>
@@ -112,10 +112,10 @@
         
         <div class="hero-content">
             <div class="hero-text">
-                <h2 class="hero-subtitle">Benvenuto a</h2>
-                <h1 class="hero-title">Villa Toscana</h1>
-                <p class="hero-description">Appartamenti e camere per vacanze</p>
-                <p class="hero-description">Winery e location per Matrimoni</p>
+                <h2 class="hero-subtitle" data-translate="hero.subtitle">Benvenuto a</h2>
+                <h1 class="hero-title" data-translate="hero.title">Villa Toscana</h1>
+                <p class="hero-description" data-translate="hero.description1">Appartamenti e camere per vacanze</p>
+                <p class="hero-description" data-translate="hero.description2">Winery e location per Matrimoni</p>
             </div>
         </div>
         
@@ -130,18 +130,18 @@
         
         <!-- Scroll Indicator -->
         <div class="scroll-indicator">
-            <span class="scroll-text">SCROLL</span>
+            <span class="scroll-text" data-translate="scroll.text1">SCROLL</span>
             <div class="scroll-arrow">
                 <i class="fas fa-chevron-down"></i>
             </div>
-            <span class="scroll-text">DOWN</span>
+            <span class="scroll-text" data-translate="scroll.text2">DOWN</span>
         </div>
         
         <!-- Booking Button -->
         <div class="booking-widget">
             <button class="booking-btn">
                 <i class="fas fa-calendar-check"></i>
-                <span>PRENOTA</span>
+                <span data-translate="booking.button">PRENOTA</span>
             </button>
         </div>
     </section>
@@ -149,8 +149,8 @@
     <!-- Galleria Section -->
     <section id="galleria" class="galleria">
         <div class="container">
-            <h2>Le Nostre Camere</h2>
-            <p>Scopri le nostre eleganti camere e appartamenti</p>
+            <h2 data-translate="gallery.title">Le Nostre Camere</h2>
+            <p data-translate="gallery.subtitle">Scopri le nostre eleganti camere e appartamenti</p>
             
             <div class="rooms-grid">
                 <div class="room-card">
@@ -243,21 +243,21 @@
     <!-- Dove Siamo Section -->
     <section id="dove-siamo" class="dove-siamo">
         <div class="container">
-            <h2>Dove Siamo</h2>
+            <h2 data-translate="location.title">Dove Siamo</h2>
             <div class="location-content">
                 <div class="location-info">
-                    <h3>Villa Toscana</h3>
-                    <p><i class="fas fa-map-marker-alt"></i> Via del Chianti 123, 53013 Gaiole in Chianti (SI)</p>
-                    <p><i class="fas fa-phone"></i> +39 0577 123 456</p>
-                    <p><i class="fas fa-envelope"></i> info@villatoscana.it</p>
+                    <h3 data-translate="location.name">Villa Toscana</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> <span data-translate="location.address">Via del Chianti 123, 53013 Gaiole in Chianti (SI)</span></p>
+                    <p><i class="fas fa-phone"></i> <span data-translate="location.phone">+39 0577 123 456</span></p>
+                    <p><i class="fas fa-envelope"></i> <span data-translate="location.email">info@villatoscana.it</span></p>
                     
                     <div class="transport-info">
-                        <h4>Come raggiungerci:</h4>
+                        <h4 data-translate="location.transport.title">Come raggiungerci:</h4>
                         <ul>
-                            <li><i class="fas fa-car"></i> Da Firenze: 45 min in auto</li>
-                            <li><i class="fas fa-car"></i> Da Siena: 30 min in auto</li>
-                            <li><i class="fas fa-plane"></i> Aeroporto Firenze: 1 ora</li>
-                            <li><i class="fas fa-train"></i> Stazione Siena: 40 min</li>
+                            <li><i class="fas fa-car"></i> <span data-translate="location.transport.florence">Da Firenze: 45 min in auto</span></li>
+                            <li><i class="fas fa-car"></i> <span data-translate="location.transport.siena">Da Siena: 30 min in auto</span></li>
+                            <li><i class="fas fa-plane"></i> <span data-translate="location.transport.airport">Aeroporto Firenze: 1 ora</span></li>
+                            <li><i class="fas fa-train"></i> <span data-translate="location.transport.train">Stazione Siena: 40 min</span></li>
                         </ul>
                     </div>
                 </div>
@@ -271,12 +271,12 @@
     <!-- Servizi Section -->
     <section id="servizi" class="servizi">
         <div class="container">
-            <h2>Servizi nei Dintorni</h2>
+            <h2 data-translate="services.title">Servizi nei Dintorni</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <i class="fas fa-utensils"></i>
-                    <h3>Ristoranti</h3>
-                    <p>I migliori ristoranti tradizionali toscani a pochi passi</p>
+                    <h3 data-translate="services.restaurants">Ristoranti</h3>
+                    <p data-translate="services.restaurants.desc">I migliori ristoranti tradizionali toscani a pochi passi</p>
                     <ul>
                         <li>Trattoria del Chianti - 2 min</li>
                         <li>Osteria del Borgo - 5 min</li>
@@ -286,8 +286,8 @@
 
                 <div class="service-card">
                     <i class="fas fa-wine-glass"></i>
-                    <h3>Winery</h3>
-                    <p>Visite guidate e degustazioni nei migliori vigneti</p>
+                    <h3 data-translate="services.winery">Winery</h3>
+                    <p data-translate="services.winery.desc">Visite guidate e degustazioni nei migliori vigneti</p>
                     <ul>
                         <li>Cantina Antinori - 10 min</li>
                         <li>Castello di Brolio - 15 min</li>
@@ -297,8 +297,8 @@
 
                 <div class="service-card">
                     <i class="fas fa-landmark"></i>
-                    <h3>Attrazioni</h3>
-                    <p>Monumenti e borghi storici nelle vicinanze</p>
+                    <h3 data-translate="services.attractions">Attrazioni</h3>
+                    <p data-translate="services.attractions.desc">Monumenti e borghi storici nelle vicinanze</p>
                     <ul>
                         <li>Castello di Brolio - 15 min</li>
                         <li>Siena - 30 min</li>
@@ -308,8 +308,8 @@
 
                 <div class="service-card">
                     <i class="fas fa-heart"></i>
-                    <h3>Matrimoni</h3>
-                    <p>Location perfetta per il tuo giorno speciale</p>
+                    <h3 data-translate="services.weddings">Matrimoni</h3>
+                    <p data-translate="services.weddings.desc">Location perfetta per il tuo giorno speciale</p>
                     <ul>
                         <li>Giardino panoramico</li>
                         <li>Sala ricevimenti</li>
@@ -323,8 +323,8 @@
     <!-- Testimonianze Section -->
     <section id="testimonianze" class="testimonianze">
         <div class="container">
-            <h2>Le Esperienze dei Nostri Ospiti</h2>
-            <p>Scopri cosa dicono di noi i viaggiatori di tutto il mondo</p>
+            <h2 data-translate="testimonials.title">Le Esperienze dei Nostri Ospiti</h2>
+            <p data-translate="testimonials.subtitle">Scopri cosa dicono di noi i viaggiatori di tutto il mondo</p>
             
             <div class="testimonials-grid">
                 <div class="testimonial-card">
@@ -335,7 +335,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"Esperienza indimenticabile! La villa è incantevole e la vista sui vigneti è mozzafiato. Torneremo sicuramente!"</p>
+                    <p class="testimonial-text" data-translate="testimonial.1">"Esperienza indimenticabile! La villa è incantevole e la vista sui vigneti è mozzafiato. Torneremo sicuramente!"</p>
                     <div class="testimonial-author">
                         <strong>Marco e Giulia</strong>
                         <span>Milano, Italia</span>
@@ -350,7 +350,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"Perfetto per un matrimonio romantico! Il personale è stato eccezionale e tutto è stato organizzato alla perfezione."</p>
+                    <p class="testimonial-text" data-translate="testimonial.2">"Perfetto per un matrimonio romantico! Il personale è stato eccezionale e tutto è stato organizzato alla perfezione."</p>
                     <div class="testimonial-author">
                         <strong>Sarah e James</strong>
                         <span>Londra, UK</span>
@@ -365,7 +365,7 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <p class="testimonial-text">"La degustazione di vini è stata fantastica! Un'esperienza autentica nel cuore del Chianti."</p>
+                    <p class="testimonial-text" data-translate="testimonial.3">"La degustazione di vini è stata fantastica! Un'esperienza autentica nel cuore del Chianti."</p>
                     <div class="testimonial-author">
                         <strong>Pierre Dubois</strong>
                         <span>Parigi, Francia</span>
@@ -378,41 +378,41 @@
     <!-- Contatti Section -->
     <section id="contatti" class="contatti">
         <div class="container">
-            <h2>Contattaci</h2>
+            <h2 data-translate="contact.title">Contattaci</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <h3>Informazioni di Contatto</h3>
+                    <h3 data-translate="contact.info.title">Informazioni di Contatto</h3>
                     <div class="contact-item">
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
-                            <h4>Indirizzo</h4>
-                            <p>Via del Chianti 123, 53013 Gaiole in Chianti (SI), Italia</p>
+                            <h4 data-translate="contact.address">Indirizzo</h4>
+                            <p data-translate="location.address">Via del Chianti 123, 53013 Gaiole in Chianti (SI), Italia</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-phone"></i>
                         <div>
-                            <h4>Telefono</h4>
-                            <p>+39 0577 123 456</p>
+                            <h4 data-translate="contact.phone">Telefono</h4>
+                            <p data-translate="location.phone">+39 0577 123 456</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
                         <div>
-                            <h4>Email</h4>
-                            <p>info@villatoscana.it</p>
+                            <h4 data-translate="contact.email">Email</h4>
+                            <p data-translate="location.email">info@villatoscana.it</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <i class="fas fa-clock"></i>
                         <div>
-                            <h4>Orari Check-in</h4>
-                            <p>14:00 - 22:00</p>
+                            <h4 data-translate="contact.checkin">Orari Check-in</h4>
+                            <p data-translate="contact.checkin.time">14:00 - 22:00</p>
                         </div>
                     </div>
 
                     <div class="social-links">
-                        <h4>Seguici sui Social</h4>
+                        <h4 data-translate="contact.social">Seguici sui Social</h4>
                         <div class="social-icons">
                             <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
                             <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
@@ -423,21 +423,21 @@
                 </div>
 
                 <div class="contact-form">
-                    <h3>Invia un Messaggio</h3>
+                    <h3 data-translate="contact.form.title">Invia un Messaggio</h3>
                     <form id="contactForm">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Nome e Cognome" required>
+                            <input type="text" id="name" name="name" placeholder="Nome e Cognome" data-translate-placeholder="contact.form.name" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Email" required>
+                            <input type="email" id="email" name="email" placeholder="Email" data-translate-placeholder="contact.form.email" required>
                         </div>
                         <div class="form-group">
-                            <input type="tel" id="phone" name="phone" placeholder="Telefono">
+                            <input type="tel" id="phone" name="phone" placeholder="Telefono" data-translate-placeholder="contact.form.phone">
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Il tuo messaggio" rows="5" required></textarea>
+                            <textarea id="message" name="message" placeholder="Il tuo messaggio" data-translate-placeholder="contact.form.message" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Invia Messaggio</button>
+                        <button type="submit" class="btn btn-primary" data-translate="contact.form.submit">Invia Messaggio</button>
                     </form>
                 </div>
             </div>
@@ -500,47 +500,47 @@
     <!-- FAQ Section -->
     <section id="faq" class="faq">
         <div class="container">
-            <h2>Domande Frequenti</h2>
-            <p>Tutto quello che devi sapere sul tuo soggiorno</p>
+            <h2 data-translate="faq.title">Domande Frequenti</h2>
+            <p data-translate="faq.subtitle">Tutto quello che devi sapere sul tuo soggiorno</p>
             
             <div class="faq-grid">
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Quali sono gli orari di check-in e check-out?</h3>
+                        <h3 data-translate="faq.1.question">Quali sono gli orari di check-in e check-out?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Il check-in è disponibile dalle 14:00 alle 22:00, mentre il check-out è entro le 11:00 del mattino.</p>
+                        <p data-translate="faq.1.answer">Il check-in è disponibile dalle 14:00 alle 22:00, mentre il check-out è entro le 11:00 del mattino.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>È possibile prenotare per più di 4 persone?</h3>
+                        <h3 data-translate="faq.2.question">È possibile prenotare per più di 4 persone?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Sì, contattaci direttamente per prenotazioni di gruppo o famiglie numerose. Offriamo soluzioni personalizzate.</p>
+                        <p data-translate="faq.2.answer">Sì, contattaci direttamente per prenotazioni di gruppo o famiglie numerose. Offriamo soluzioni personalizzate.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>La colazione è inclusa nel prezzo?</h3>
+                        <h3 data-translate="faq.3.question">La colazione è inclusa nel prezzo?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Assolutamente sì! La nostra colazione continentale è inclusa nel prezzo e servita ogni mattina dalle 7:30 alle 10:00.</p>
+                        <p data-translate="faq.3.answer">Assolutamente sì! La nostra colazione continentale è inclusa nel prezzo e servita ogni mattina dalle 7:30 alle 10:00.</p>
                     </div>
                 </div>
                 
                 <div class="faq-item">
                     <div class="faq-question">
-                        <h3>Accettate animali domestici?</h3>
+                        <h3 data-translate="faq.4.question">Accettate animali domestici?</h3>
                         <i class="fas fa-chevron-down"></i>
                     </div>
                     <div class="faq-answer">
-                        <p>Sì, accettiamo animali domestici di piccola taglia su richiesta. È richiesto un supplemento di €15 per notte.</p>
+                        <p data-translate="faq.4.answer">Sì, accettiamo animali domestici di piccola taglia su richiesta. È richiesto un supplemento di €15 per notte.</p>
                     </div>
                 </div>
             </div>
@@ -552,28 +552,28 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Villa Toscana</h3>
-                    <p>Il tuo soggiorno perfetto nel cuore del Chianti</p>
+                    <h3 data-translate="logo">Villa Toscana</h3>
+                    <p data-translate="footer.description">Il tuo soggiorno perfetto nel cuore del Chianti</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Link Utili</h4>
+                    <h4 data-translate="footer.links">Link Utili</h4>
                     <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#galleria">Galleria</a></li>
-                        <li><a href="#dove-siamo">Dove Siamo</a></li>
-                        <li><a href="#testimonianze">Testimonianze</a></li>
-                        <li><a href="#faq">FAQ</a></li>
-                        <li><a href="#contatti">Contatti</a></li>
+                        <li><a href="#home" data-translate="nav.home">Home</a></li>
+                        <li><a href="#galleria" data-translate="nav.gallery">Galleria</a></li>
+                        <li><a href="#dove-siamo" data-translate="nav.location">Dove Siamo</a></li>
+                        <li><a href="#testimonianze" data-translate="nav.testimonials">Testimonianze</a></li>
+                        <li><a href="#faq" data-translate="nav.faq">FAQ</a></li>
+                        <li><a href="#contatti" data-translate="nav.contact">Contatti</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contatti</h4>
-                    <p>Via del Chianti 123, 53013 Gaiole in Chianti (SI)</p>
-                    <p>+39 0577 123 456</p>
-                    <p>info@villatoscana.it</p>
+                    <h4 data-translate="footer.contact">Contatti</h4>
+                    <p data-translate="location.address">Via del Chianti 123, 53013 Gaiole in Chianti (SI)</p>
+                    <p data-translate="location.phone">+39 0577 123 456</p>
+                    <p data-translate="location.email">info@villatoscana.it</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Seguici</h4>
+                    <h4 data-translate="footer.follow">Seguici</h4>
                     <div class="social-icons">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-instagram"></i></a>
@@ -583,7 +583,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Villa Toscana. Tutti i diritti riservati.</p>
+                <p data-translate="footer.copyright">&copy; 2024 Villa Toscana. Tutti i diritti riservati.</p>
             </div>
         </div>
     </footer>
@@ -621,6 +621,7 @@
     }
     </script>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
     
     <!-- Analytics -->
